@@ -1,0 +1,11 @@
+{
+  "name": "cluster-demo",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.10.6",
+    "file-stream-rotator": "0.0.6",
+    "morgan": "^1.6.1",
+    "node-uuid": "^1.4.3"
+  }
+}
