@@ -47,4 +47,4 @@ function assignId(req, res, next) {
     next()
 }
 
-module.exports = morgan(':date[iso] :method :url :request-length :status :res[content-length] :response-time', {stream: perfLogStream})
+module.exports = morgan(':date[iso] :id :method :url :request-length :status :res[content-length] :response-time', {stream: perfLogStream})
