@@ -31,7 +31,8 @@ module.exports = function (app) {
         //frequency: 'daily',  // broken: https://github.com/holidayextras/file-stream-rotator/issues/9
         //frequency: '1h',
         verbose: false,
-        date_format: 'YYYYMMDD'
+        //date_format: 'YYYYMMDD'
+        date_format: 'YYYYMMDDHHmm'
     })
 
 //app.use(morgan(':id :method :url :request-length :status :res[content-length] :response-time'))
