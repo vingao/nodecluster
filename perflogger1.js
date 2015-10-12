@@ -8,6 +8,8 @@ var logDirectory = __dirname + '/log'
 //var app = express()
 
 module.exports = function (app) {
+    app.use(bodyParser.urlencoded({extended: true}));
+    app.use(bodyParser.json());
 
     morgan.token('id', function getId(req) {
         return req.id

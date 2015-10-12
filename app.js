@@ -9,11 +9,17 @@ app.use(bodyParser.json());
 app.use(perflogger(app));
 
 app.get('/',function(req,res){
-    res.end("GET: Hello world from " + process.pid);
+    // res['content-length'] won't work with res.end
+    //res.end("GET: Hello world from " + process.pid);
+
+    res.send("GET: Hello world from " + process.pid);
 });
 
 app.post('/',function(req,res){
-    res.end("POST: Hello world from " + process.pid);
+    // res['content-length'] won't work with res.end
+    //res.end("POST: Hello world from " + process.pid);
+
+    res.send("POST: Hello world from " + process.pid);
 });
 
 
